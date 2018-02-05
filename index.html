@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Form Validation Single Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="shortcut icon"  href="favicon.ico"> -->
+</head>
+
+<body>
+
+
+<header class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="header">
+					<div class="header__logo">
+						<h2>Company Profile</h2>
+					</div>
+					<div class="header__submit">
+						<button type="button" id="SendProfile" class="btn btn-default" onclick="validate1()">Submit</button>
+						<button type="button" id="CancelProfile" class="btn btn-default" onclick="clearField()">Cancel</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</header>
+
+<main class="container main">
+	<div class="row">
+		<div class="col-md-6">
+			<form id="myForm1">
+				<div class="form-group">
+					<label for="name">Nama</label>
+					<input type="text" class="form-control" id="name" onchange="input1('name', this.value)">
+				</div>
+
+				<div class="form-group">
+					<label for="description">Description</label>
+					<textarea class="form-control" rows="5" id="description" onchange="input1('description', this.value)"></textarea>
+				</div>
+
+				<div class="main__address">
+					<span>Address</span>
+					<div class="form-group">
+						<label for="street">Street</label>
+						<input type="text" class="form-control" id="street" onchange="input1('address', this.value)">
+					</div>
+
+					<div class="form-group">
+						<label for="city">City</label>
+						<input type="text" class="form-control" id="city" onchange="input1('city', this.value)">
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="province">Province</label>
+								<select class="form-control" id="province" onchange="input1('province', this.value)">
+									<option value="">Choose</option>
+									<option value="jakarta">Jakarta</option>
+									<option value="surabaya">Surabaya</option>
+									<option value="solo">Solo</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="code">Zip Code</label>
+								<input type="text" class="form-control" id="code" onchange="input1('zip_code', this.value)">
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="col-md-6">
+			<form id="myForm2">
+				<span>Ask Us</span>
+
+				<div class="form-group">
+					<label for="division">Division</label>
+					<select class="form-control" id="division" onchange="input2('division', this.value)">
+						<option value="">- Choose Division</option>
+						<option value="technology">Technology</option>
+						<option value="accounting">Accounting</option>
+						<option value="finance">Finance</option>
+					</select>
+				</div><br>
+
+				<div class="form-group">
+					<label for="names">Nama</label>
+					<input type="text" class="form-control" id="names" onchange="input2('name', this.value)">
+				</div>
+
+				<div class="form-group">
+					<label for="question">Questions</label>
+					<textarea class="form-control" rows="5" id="question" onchange="input2('question', this.value)"></textarea>
+				</div>
+				<br><br>
+				<button type="button" id="askUs" class="btn btn-default" onclick="validate2()">Send</button>
+			</form>
+		</div>
+	</div>
+
+</main>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+	
+
+</body>
+
+</html>

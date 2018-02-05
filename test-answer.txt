@@ -1,0 +1,61 @@
+1. How do you prevent the user from submitting the form prematurely when the user
+hit enter?
+
+==> check one by one if the field has been the appropriate rules or not.
+
+2. How do you add validation and error messages to the form?
+
+==> tell user with alert message.
+
+3. What is the most important html element for building a good SEO? 
+
+==> a : Title Tag
+    b : Meta Description Tag
+    c : Heading Tags
+    d : Image Alt  
+    e : strong tag
+    f : Canonial Tag
+
+4. What is the difference between responsive and adaptive design?
+
+==> Responsive Design
+	1. A Single Website
+	2. Single URL
+	3. Good for SEO
+	4. One Code for All devices
+
+==> Adaptive Design
+	1. Good for Speed
+	2. Use Multiple url
+	3. User Experience Focus
+
+5. What is difference between id and class?
+	ID 
+	a : only to use once.
+	b : value css specificity bigger than class.
+
+	CLASS
+	a : one class can use more than once.
+	b ; value css specificity smaller than ID.
+
+6. How many columns available in css bootstrap?
+
+==> 12 Columns 
+
+7. What js framework or tools are you familiar with?
+
+==> Framework 
+	Till this time i am stil learn about Vue JS
+
+==> Tools
+	- Gulp 
+	- Browserify
+	- Chrome dev tool
+	- Npm 
+	- Sass
+	- Atom
+
+8. How to communicate with server without reloading a page?
+
+==> Just communicate using AJAX 
+
